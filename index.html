@@ -1,31 +1,53 @@
+<!DOCTYPE html>
 <html>
    <head>
-      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-      <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <style>
-         .graybox {
-            background-color:#ddd;
-         }
-      </style>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.teal-pink.min.css">
+     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+      <!--<link href="style.css" rel="stylesheet">-->
+
    </head>
-<body>
-   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
+   <body>
+     <!-- Uses a transparent header that draws on top of the layout's background -->
+     <style>
+       .demo-layout-transparent {
+         background: url('../assets/demos/transparent.jpg') center / cover;
+       }
+       .demo-layout-transparent .mdl-layout__header,
+       .demo-layout-transparent .mdl-layout__drawer-button {
+       /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+       color: white;
+       }
+     </style>
+     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+       <header class="mdl-layout__header mdl-layout__header--transparent">
          <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Material Design Grid</span>
+           <!-- Title -->
+           <span class="mdl-layout-title">Title</span>
+           <!-- Add spacer, to align navigation to the right -->
+           <div class="mdl-layout-spacer"></div>
+           <!-- Navigation -->
+           <nav class="mdl-navigation">
+             <a class="mdl-navigation__link" href="">Link</a>
+             <a class="mdl-navigation__link" href="">Link</a>
+             <a class="mdl-navigation__link" href="">Link</a>
+             <a class="mdl-navigation__link" href="">Link</a>
+           </nav>
          </div>
-      </header>
-      <div class="mdl-layout__drawer">
-         <span class="mdl-layout-title">Material Design Tutorial</span>
+       </header>
+       <div class="mdl-layout__drawer">
+         <span class="mdl-layout-title">Title</span>
          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Home</a>
-            <a class="mdl-navigation__link" href="">About</a>
-            <a class="mdl-navigation__link" href="">Settings</a>
+           <a class="mdl-navigation__link" href="">Link</a>
+           <a class="mdl-navigation__link" href="">Link</a>
+           <a class="mdl-navigation__link" href="">Link</a>
+           <a class="mdl-navigation__link" href="">Link</a>
          </nav>
-      </div>
+       </div>
+
       <main class="mdl-layout__content">
-         <div class="mdl-grid">
+         <!--<div class="mdl-grid">
             <div class="mdl-cell mdl-cell--1-col graybox">1</div>
             <div class="mdl-cell mdl-cell--1-col graybox">2</div>
             <div class="mdl-cell mdl-cell--1-col graybox">3</div>
@@ -53,7 +75,7 @@
             <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet graybox">6 on desktop, 8 on tablet</div>
             <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet graybox">4 on desktop, 6 on tablet</div>
             <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone graybox">2 on desktop, 4 on phone</div>
-         </div>
+         </div>-->
       </main>
    </div>
 </body>
